@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./styles.css";
 
 const DICTIONARY = new Set(
@@ -14914,6 +14914,709 @@ anticynicism
 anticipant
 anticipatable
 anticipate
+algorithm
+algorithms
+app
+apps
+avatar
+avatars
+bandwidth
+barcode
+barcodes
+blog
+blogger
+bloggers
+blogging
+bluetooth
+browser
+browsers
+bug
+bugs
+byte
+bytes
+chat
+chatbot
+chatbots
+chatroom
+chatrooms
+cloud
+cloudbased
+coding
+crypto
+cryptocurrency
+cryptocurrencies
+cyber
+cyberattack
+cyberattacks
+cyberbullying
+cybersecurity
+database
+databases
+debug
+debugged
+debugging
+developer
+developers
+development
+digital
+digitally
+download
+downloadable
+downloaded
+downloading
+emoji
+emojis
+emulator
+emulators
+encryption
+encrypted
+ethernet
+firewall
+firewalls
+firmware
+follower
+followers
+following
+gaming
+gamer
+gamers
+geotag
+geotagged
+geotagging
+hacker
+hackers
+hashtag
+hashtags
+homepage
+hyperlink
+hyperlinks
+influencer
+influencers
+internet
+internetbased
+laptop
+laptops
+livestream
+livestreams
+livestreamer
+livestreamers
+livestreaming
+malware
+metadata
+microchip
+microchips
+moderator
+moderators
+modem
+modems
+network
+networks
+notification
+notifications
+offline
+online
+opensource
+password
+passwords
+podcast
+podcasts
+podcaster
+podcasters
+programmer
+programmers
+programming
+router
+routers
+screenshot
+screenshots
+searchable
+searchbar
+searchbars
+selfie
+selfies
+server
+servers
+software
+spam
+spammed
+spammer
+spammers
+spamming
+stream
+streamed
+streamer
+streamers
+streaming
+subreddit
+subreddits
+tablet
+tablets
+tech
+technical
+technically
+technology
+texting
+thumbnail
+thumbnails
+upload
+uploaded
+uploading
+username
+usernames
+viral
+virality
+virtually
+virtual
+vlogger
+vloggers
+vlogging
+vpn
+webcam
+webcams
+webpage
+webpages
+website
+websites
+wifi
+wireless
+youtube
+youtuber
+youtubers
+aesthetic
+aesthetics
+aesthetically
+binge
+binged
+bingeable
+bingeing
+cancel
+cancelled
+cancelling
+clickbait
+clickable
+clout
+content
+contentcreator
+contentcreators
+creator
+creators
+cringe
+cringed
+cringey
+doomscroll
+doomscrolling
+fandom
+fandoms
+feed
+feeds
+filter
+filtered
+filtering
+finsta
+ghosted
+ghosting
+glowup
+grind
+grinded
+grinding
+irl
+lowkey
+mainstream
+meme
+memes
+memer
+memers
+memeable
+mid
+mood
+offline
+posting
+post
+posts
+repost
+reposted
+reposting
+scroll
+scrolled
+scrolling
+stan
+stans
+staning
+storytime
+tag
+tagged
+tagging
+trending
+trend
+trends
+unfollow
+unfollowed
+unfollowing
+unmute
+unmuted
+unverified
+vibe
+vibes
+vibed
+vibing
+wishlist
+airdrop
+airpods
+autocorrect
+autofill
+biometric
+biometrics
+blockchain
+blockchains
+bookmark
+bookmarked
+bookmarks
+broadband
+cashless
+click
+clicked
+clicking
+clipboard
+darkmode
+datacenter
+datacenters
+digitize
+digitized
+digitizing
+downtime
+ecommerce
+edtech
+facetime
+facial
+fintech
+fullscreen
+gigabyte
+gigabytes
+gigaflop
+gigaflops
+hardware
+headset
+headsets
+hotspot
+hotspots
+inbox
+inboxes
+keyboard
+keyboards
+login
+logins
+logout
+logouts
+megabyte
+megabytes
+megapixel
+megapixels
+microphone
+microphones
+minigame
+minigames
+multiplayer
+multiplayer
+passwordless
+paywall
+paywalls
+processor
+processors
+reboot
+rebooted
+rebooting
+refresh
+refreshed
+refreshing
+remotely
+screenshare
+screensharing
+smartphone
+smartphones
+smartwatch
+smartwatches
+subscription
+subscriptions
+sync
+synced
+syncing
+telehealth
+touchscreen
+touchscreens
+twofactor
+videocall
+videocalls
+videogame
+videogames
+voicechat
+voicechats
+voiceover
+webinar
+webinars
+workspace
+workspaces
+ai
+aibased
+aigenerated
+artificial
+autonomous
+benchmark
+benchmarks
+bias
+biased
+copilot
+dataset
+datasets
+deepfake
+deepfakes
+deeplearning
+embedding
+embeddings
+generative
+generation
+hallucination
+hallucinations
+inference
+machinelearning
+model
+models
+neural
+neuralnetwork
+neuralnetworks
+prompt
+prompts
+prompting
+reasoning
+robotics
+robotic
+synthetic
+token
+tokens
+training
+transformer
+transformers
+texttospeech
+voicebot
+voicebots
+based
+bestie
+besties
+bro
+bruh
+cope
+coping
+delulu
+drip
+extra
+fomo
+ghost
+goated
+lit
+noob
+noobs
+noobish
+npc
+ratio
+rizz
+salty
+simp
+simping
+slay
+slaying
+sus
+touchgrass
+unhinged
+woke
+yap
+yapping
+yapper
+yappers
+account
+accounts
+activation
+activations
+administrator
+administrators
+analytics
+anonymous
+anonymously
+authentication
+authorization
+backup
+backups
+biometric
+blogpost
+blogposts
+bookmarking
+broadcast
+broadcasting
+cache
+cached
+captcha
+channel
+channels
+cloudbased
+comment
+commented
+commenting
+comments
+community
+communities
+connection
+connections
+cookie
+cookies
+dashboard
+dashboards
+device
+devices
+directory
+directories
+domain
+domains
+downloadable
+encryption
+endpoint
+endpoints
+extension
+extensions
+facialrecognition
+file
+files
+filesystem
+filesystems
+firewall
+forum
+forums
+gigabyte
+handle
+handles
+hosting
+hosted
+hosting
+identity
+interface
+interfaces
+javascript
+login
+logout
+malicious
+maliciously
+megabyte
+mobile
+moderation
+multimedia
+notification
+opensource
+platform
+platforms
+plugin
+plugins
+privacy
+private
+profile
+profiles
+protocol
+protocols
+realtime
+recovery
+redirect
+redirected
+redirecting
+repository
+repositories
+responsive
+screenshot
+searchengine
+searchengines
+security
+serverless
+signup
+signups
+socialmedia
+streaming
+stylesheet
+stylesheets
+subscription
+tagging
+template
+templates
+thread
+threads
+timestamp
+timestamps
+toolbar
+tracking
+tracker
+trackers
+twofactor
+verification
+verified
+virtualization
+webapp
+webapps
+webhosting
+webpage
+webserver
+webservers
+widget
+widgets
+wireframe
+wireframes
+workflow
+workflows
+workspace
+zoom
+zooming
+accessible
+accessibility
+adaptable
+addiction
+addictive
+aesthetic
+aesthetics
+alternative
+applicable
+authentic
+authenticity
+automated
+automation
+awareness
+community
+contemporary
+convenience
+convenient
+creative
+creator
+creativity
+digitalization
+discoverable
+downloadable
+educational
+engagement
+engaging
+entertainment
+entrepreneur
+entrepreneurs
+entrepreneurship
+environmental
+flexible
+freelance
+freelancer
+freelancers
+globalization
+interactive
+interaction
+innovation
+innovative
+influential
+informative
+instant
+interactive
+lifestyle
+modernize
+modernized
+modernizing
+personalized
+personalization
+portable
+remote
+remotely
+social
+socialize
+socialized
+socializing
+sustainable
+trending
+trendy
+unlimited
+update
+updated
+updating
+upgrade
+upgraded
+upgrading
+virtual
+viral
+visibility
+accessible
+accountable
+activist
+activism
+advocacy
+algorithmic
+anonymous
+app
+applicable
+artificial
+automated
+automation
+bias
+biased
+bot
+bots
+cancel
+cancelled
+cancellation
+censor
+censored
+censorship
+click
+clickbait
+content
+creator
+creators
+data
+database
+digital
+disinformation
+discussion
+engagement
+fake
+factcheck
+factchecked
+factchecking
+filter
+follower
+followers
+headline
+headlines
+influencer
+influencers
+information
+misinformation
+moderate
+moderated
+moderator
+platform
+platforms
+political
+privacy
+propaganda
+reaction
+reactions
+report
+reported
+reporting
+search
+searchable
+share
+shared
+sharing
+source
+sources
+sponsored
+sponsor
+subscribers
+subscription
+thread
+trending
+verified
+viral
+visibility
+voter
+web
+youth
 anticipated
 anticipates
 anticipating
@@ -234938,6 +235641,7 @@ phosphorism
 phosphorite
 phosphoritic
 phosphorize
+bryce
 phosphorizing
 phosphorogen
 phosphorogene
@@ -370113,7 +370817,7 @@ zwitterionic
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-const DEFAULT_TIME = 20;
+const DEFAULT_TIME = 10;
 
 const COUNTER_URL =
   "https://countapi.mileshilliard.com/api/v1/hit/word_bomb_solo_games_7f3c9";
@@ -370133,9 +370837,10 @@ async function countGamePlayed(
   }
 }
 
-type Difficulty = "easy" | "medium" | "hard";
+type Difficulty = "superEasy" | "easy" | "medium" | "hard";
 
 const DIFFICULTY_LIMITS: Record<Difficulty, number> = {
+  superEasy: 2000,
   easy: 1000,
   medium: 500,
   hard: 200,
@@ -370203,9 +370908,10 @@ const PROMPT_DATA = buildPromptData();
 /*
  * Build a pool for each difficulty.
  *
- * Easy   = 1000+ words containing the fragment
- * Medium = 500+ words
- * Hard   = 200+ words
+ * Super easy = 2000+ words containing the fragment
+ * Easy       = 1000+ words
+ * Medium     = 500+ words
+ * Hard       = 200+ words
  */
 function buildPromptPool(difficulty: Difficulty) {
   const minimum = DIFFICULTY_LIMITS[difficulty];
@@ -370224,6 +370930,7 @@ function buildPromptPool(difficulty: Difficulty) {
  *
  * More common combinations are weighted more heavily.
  */
+
 function pickPrompt(difficulty: Difficulty) {
   const pool = buildPromptPool(difficulty);
 
@@ -370272,21 +370979,20 @@ function getRandomExamples(examples: string[]) {
 
 export default function App() {
   /*
-   * Medium is the default difficulty.
+   * Super easy is the default difficulty.
    */
-  const [difficulty, setDifficulty] = useState<Difficulty>("medium");
+  const [difficulty, setDifficulty] = useState<Difficulty>("superEasy");
 
   /*
    * Default timer is 20 seconds.
    */
   const [roundTime, setRoundTime] = useState<number>(10);
 
-  /*
-   * Zen mode has no timer and no lives.
-   */
-  const [zenMode, setZenMode] = useState(false);
+  type GameMode = "timed" | "zen" | "rush" | "shortrush";
 
-  const initialPrompt = pickPrompt("medium");
+  const [gameMode, setGameMode] = useState<GameMode>("rush");
+
+  const initialPrompt = pickPrompt("superEasy");
 
   const [prompt, setPrompt] = useState(initialPrompt.fragment);
 
@@ -370301,6 +371007,11 @@ export default function App() {
   const [lives, setLives] = useState(3);
 
   const [score, setScore] = useState(0);
+
+  const [rushWords, setRushWords] = useState(0);
+  const [rushStartTime, setRushStartTime] = useState<number | null>(null);
+  const [rushElapsed, setRushElapsed] = useState(0);
+  const [rushTotalTime, setRushTotalTime] = useState<number | null>(null);
 
   const [gamesPlayed, setGamesPlayed] = useState(0);
 
@@ -370346,30 +371057,49 @@ export default function App() {
     if (countedInitialGame.current) return;
 
     countedInitialGame.current = true;
-
-    countGamePlayed(setGamesPlayed);
   }, []);
 
   /*
    * Timer.
    *
-   * Zen mode completely disables the timer.
+   * Zen and Rush modes completely disable the timer.
    */
   useEffect(() => {
-    if (gameOver || zenMode) return;
+    if (gameOver || gameMode !== "timed") return;
 
     const id = window.setInterval(() => {
       setTime((current) => Math.max(0, current - 1));
     }, 1000);
 
     return () => window.clearInterval(id);
-  }, [gameOver, zenMode]);
+  }, [gameOver, gameMode]);
+
+  /*
+   * Rush modes use a live elapsed timer instead of lives.
+   */
+  useEffect(() => {
+    if (
+      gameOver ||
+      (gameMode !== "rush" && gameMode !== "shortrush") ||
+      rushStartTime === null
+    )
+      return;
+
+    const update = () => {
+      setRushElapsed((Date.now() - rushStartTime) / 1000);
+    };
+
+    update();
+    const id = window.setInterval(update, 100);
+
+    return () => window.clearInterval(id);
+  }, [gameOver, gameMode, rushStartTime]);
 
   /*
    * Handle the timer reaching zero.
    */
   useEffect(() => {
-    if (gameOver || zenMode || time !== 0) return;
+    if (gameOver || gameMode !== "timed" || time !== 0) return;
 
     /*
      * Choose two example words only AFTER
@@ -370426,7 +371156,7 @@ export default function App() {
     setTime(roundTime);
 
     roundStartedAt.current = Date.now();
-  }, [time, gameOver, zenMode, prompt, promptExamples, difficulty, roundTime]);
+  }, [time, gameOver, gameMode, prompt, promptExamples, difficulty, roundTime]);
 
   const submit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -370495,9 +371225,25 @@ export default function App() {
 
     setUsed(nextUsed);
 
-    setScore((value) => value + 1);
+    const nextScore = score + 1;
+    setScore(nextScore);
 
     setInput("");
+
+    if (gameMode === "rush" || gameMode === "shortrush") {
+      const nextRushWords = rushWords + 1;
+      const rushGoal = gameMode === "shortrush" ? 5 : 10;
+      setRushWords(nextRushWords);
+
+      if (nextRushWords >= rushGoal) {
+        const totalTime = (Date.now() - (rushStartTime ?? Date.now())) / 1000;
+
+        setRushTotalTime(totalTime);
+        setMessage("rush complete!");
+        setGameOver(true);
+        return;
+      }
+    }
 
     /*
      * Get the next prompt.
@@ -370507,7 +371253,7 @@ export default function App() {
     setPrompt(nextPrompt.fragment);
     setPromptExamples(nextPrompt.examples);
 
-    if (!zenMode) {
+    if (gameMode === "timed") {
       setTime(roundTime);
     }
 
@@ -370532,86 +371278,67 @@ export default function App() {
   /*
    * Zen mode can be ended manually.
    */
+  const goToStart = () => {
+    setStarted(false);
+    setGameOver(false);
+    setMessage("");
+    setInput("");
+    setUsed(new Set());
+    setLetters(new Set());
+    setScore(0);
+    setRushWords(0);
+    setRushElapsed(0);
+    setRushTotalTime(null);
+    setRushStartTime(null);
+  };
   const finishGame = () => {
-    if (!zenMode || gameOver) return;
+    if (gameMode !== "zen" || gameOver) return;
 
     setGameOver(true);
   };
   const startGame = () => {
-    const startingLives = difficulty === "easy" ? 4 : 3;
-
+    countGamePlayed(setGamesPlayed);
+    const startingLives =
+      difficulty === "superEasy" ? 5 : difficulty === "easy" ? 4 : 3;
     const nextPrompt = pickPrompt(difficulty);
+    const now = Date.now();
 
     setPrompt(nextPrompt.fragment);
     setPromptExamples(nextPrompt.examples);
-
     setInput("");
-
     setLives(startingLives);
-
     setScore(0);
+    setRushWords(0);
+    setRushElapsed(0);
+    setRushTotalTime(null);
 
-    if (zenMode) {
-      setTime(0);
-    } else {
+    if (gameMode === "timed") {
       setTime(roundTime);
+    } else {
+      setTime(0);
     }
 
     setUsed(new Set());
-
     setLetters(new Set());
-
     setAnswerTimes([]);
-
     setMissedPrompts([]);
-
     setMessage("enter a word containing the letters.");
-
     setGameOver(false);
-
     setStarted(true);
+    roundStartedAt.current = now;
 
-    roundStartedAt.current = Date.now();
+    if (gameMode === "rush" || gameMode === "shortrush") {
+      setRushStartTime(now);
+    } else {
+      setRushStartTime(null);
+    }
   };
   /*
    * Start another game using the settings selected
    * on the previous stats screen.
    */
   const reset = () => {
-    const startingLives = difficulty === "easy" ? 4 : 3;
-
-    const nextPrompt = pickPrompt(difficulty);
-
-    setPrompt(nextPrompt.fragment);
-    setPromptExamples(nextPrompt.examples);
-
-    setInput("");
-
-    setLives(startingLives);
-
-    setScore(0);
-
-    if (zenMode) {
-      setTime(0);
-    } else {
-      setTime(roundTime);
-    }
-
-    setUsed(new Set());
-
-    setLetters(new Set());
-
-    setAnswerTimes([]);
-
-    setMissedPrompts([]);
-
-    setMessage("enter a word containing the letters.");
-
-    setGameOver(false);
-
-    roundStartedAt.current = Date.now();
-
-    countGamePlayed(setGamesPlayed);
+    startGame();
   };
 
   const hearts = useMemo(() => "♥".repeat(Math.max(0, lives)), [lives]);
@@ -370627,7 +371354,7 @@ export default function App() {
   return (
     <main>
       <header>
-        <div>
+        <div className="game-title" onClick={goToStart}>
           <b>BOMB PARTY</b>
           <span> SOLO</span>
         </div>
@@ -370644,7 +371371,13 @@ export default function App() {
                 score <strong>{score}</strong>
               </span>
 
-              {!zenMode && <span className="lives">{hearts || "—"}</span>}
+              {gameMode === "timed" && (
+                <span className="lives">{hearts || "—"}</span>
+              )}
+
+              {(gameMode === "rush" || gameMode === "shortrush") && (
+                <span className="timer2">{rushElapsed.toFixed(1)}s</span>
+              )}
             </>
           )}
         </div>
@@ -370675,6 +371408,18 @@ export default function App() {
                 <small>difficulty</small>
 
                 <div className="option-grid">
+                  <button
+                    type="button"
+                    className={
+                      difficulty === "superEasy" ? "option selected" : "option"
+                    }
+                    onClick={() => setDifficulty("superEasy")}
+                  >
+                    <strong>super easy</strong>
+
+                    <span>2,000+ words</span>
+                  </button>
+
                   <button
                     type="button"
                     className={
@@ -370722,13 +371467,13 @@ export default function App() {
                       type="button"
                       key={seconds}
                       className={
-                        !zenMode && roundTime === seconds
+                        gameMode === "timed" && roundTime === seconds
                           ? "option selected"
                           : "option"
                       }
                       onClick={() => {
                         setRoundTime(seconds);
-                        setZenMode(false);
+                        setGameMode("timed");
                       }}
                     >
                       <strong>{seconds}s</strong>
@@ -370743,21 +371488,46 @@ export default function App() {
                 <div className="option-grid mode-options">
                   <button
                     type="button"
-                    className={!zenMode ? "option selected" : "option"}
-                    onClick={() => setZenMode(false)}
+                    className={
+                      gameMode === "timed" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("timed")}
                   >
                     <strong>timed</strong>
-
                     <span>beat the clock</span>
                   </button>
 
                   <button
                     type="button"
-                    className={zenMode ? "option selected" : "option"}
-                    onClick={() => setZenMode(true)}
+                    className={
+                      gameMode === "rush" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("rush")}
+                  >
+                    <strong>rush</strong>
+                    <span>10 words, fastest time</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={
+                      gameMode === "shortrush" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("shortrush")}
+                  >
+                    <strong>shortrush</strong>
+
+                    <span>5 words, fastest time</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={
+                      gameMode === "zen" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("zen")}
                   >
                     <strong>zen</strong>
-
                     <span>no timer or lives</span>
                   </button>
                 </div>
@@ -370776,11 +371546,25 @@ export default function App() {
           /* ==================== GAME OVER ==================== */
           <div className="results-screen">
             <div className="results-header">
-              <small>{zenMode ? "run complete" : "game over"}</small>
+              <small>
+                {gameMode === "zen" ||
+                gameMode === "rush" ||
+                gameMode === "shortrush"
+                  ? "run complete"
+                  : "game over"}
+              </small>
 
-              <h2>{score}</h2>
+              <h2>
+                {gameMode === "rush" || gameMode === "shortrush"
+                  ? rushTotalTime?.toFixed(2)
+                  : score}
+              </h2>
 
-              <p>words this run</p>
+              <p>
+                {gameMode === "rush" || gameMode === "shortrush"
+                  ? "seconds"
+                  : "words this run"}
+              </p>
             </div>
 
             <div className="final-stats">
@@ -370844,6 +371628,18 @@ export default function App() {
                   <button
                     type="button"
                     className={
+                      difficulty === "superEasy" ? "option selected" : "option"
+                    }
+                    onClick={() => setDifficulty("superEasy")}
+                  >
+                    <strong>super easy</strong>
+
+                    <span>2,000+ words</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={
                       difficulty === "easy" ? "option selected" : "option"
                     }
                     onClick={() => setDifficulty("easy")}
@@ -370883,18 +371679,18 @@ export default function App() {
                 <small>time per word</small>
 
                 <div className="option-grid time-options">
-                  {[10, 15, 20, 30].map((seconds) => (
+                  {[5, 10, 20, 60].map((seconds) => (
                     <button
                       type="button"
                       key={seconds}
                       className={
-                        !zenMode && roundTime === seconds
+                        gameMode === "timed" && roundTime === seconds
                           ? "option selected"
                           : "option"
                       }
                       onClick={() => {
                         setRoundTime(seconds);
-                        setZenMode(false);
+                        setGameMode("timed");
                       }}
                     >
                       <strong>{seconds}s</strong>
@@ -370909,28 +371705,59 @@ export default function App() {
                 <div className="option-grid mode-options">
                   <button
                     type="button"
-                    className={!zenMode ? "option selected" : "option"}
-                    onClick={() => setZenMode(false)}
+                    className={
+                      gameMode === "timed" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("timed")}
                   >
                     <strong>timed</strong>
-
                     <span>beat the clock</span>
                   </button>
 
                   <button
                     type="button"
-                    className={zenMode ? "option selected" : "option"}
-                    onClick={() => setZenMode(true)}
+                    className={
+                      gameMode === "rush" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("rush")}
+                  >
+                    <strong>rush</strong>
+                    <span>10 words, fastest time</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={
+                      gameMode === "shortrush" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("shortrush")}
+                  >
+                    <strong>shortrush</strong>
+
+                    <span>5 words, fastest time</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={
+                      gameMode === "zen" ? "option selected" : "option"
+                    }
+                    onClick={() => setGameMode("zen")}
                   >
                     <strong>zen</strong>
-
                     <span>no timer or lives</span>
                   </button>
                 </div>
               </div>
 
               <button type="button" className="play-again" onClick={reset}>
-                {zenMode ? "start zen game" : "play again"}
+                {gameMode === "rush"
+                  ? "run again"
+                  : gameMode === "shortrush"
+                    ? "start shortrush"
+                    : gameMode === "zen"
+                      ? "start zen game"
+                      : "play again"}
               </button>
             </div>
           </div>
@@ -370939,15 +371766,29 @@ export default function App() {
           <>
             <div className="top">
               <div>
-                <small>{zenMode ? "ZEN MODE" : "TIME LEFT"}</small>
+                <small>
+                  {gameMode === "rush"
+                    ? "RUSH"
+                    : gameMode === "shortrush"
+                      ? "SHORTRUSH"
+                      : gameMode === "zen"
+                        ? "ZEN MODE"
+                        : "TIME LEFT"}
+                </small>
 
-                {!zenMode && (
+                {gameMode === "timed" && (
                   <div className={time <= 3 ? "timer danger" : "timer"}>
                     {time}s
                   </div>
                 )}
 
-                {zenMode && <div className="timer">∞</div>}
+                {gameMode === "zen" && <div className="timer">∞</div>}
+
+                {(gameMode === "rush" || gameMode === "shortrush") && (
+                  <div className="timer">
+                    {rushWords}/{gameMode === "shortrush" ? 5 : 10}
+                  </div>
+                )}
               </div>
             </div>
 
@@ -370977,7 +371818,7 @@ export default function App() {
 
               <div className="message">{message}</div>
 
-              {zenMode && (
+              {gameMode === "zen" && (
                 <button
                   type="button"
                   className="finish-button"

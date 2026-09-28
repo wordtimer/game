@@ -47,10 +47,23 @@ header span {
 .stats strong {
   color: white;
 }
+.game-title {
+  cursor: pointer;
+  user-select: none;
+}
 
+.game-title:hover {
+  opacity: 0.8;
+}
 .lives {
   color: #35b8a6 !important;
   font-size: 17px;
+  white-space: nowrap;
+}
+.timer2 {
+  color: #35b8a6 !important;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 /* Game */
@@ -341,7 +354,7 @@ label {
 
 .option-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 
@@ -394,7 +407,7 @@ label {
   text-align: center;
 }
 
-/* Timed / Zen */
+/* Timed / Rush / Short Rush / Zen */
 
 .mode-options {
   grid-template-columns: repeat(2, 1fr);
@@ -437,6 +450,7 @@ label {
   border-color: #35b8a6;
   color: #35b8a6;
 }
+
 /* Start screen */
 
 .start-screen {
@@ -507,9 +521,24 @@ label {
 .results-screen small {
   text-transform: lowercase;
 }
+
 /* Mobile */
 
 @media (max-width: 600px) {
+  main {
+    margin: 15px auto;
+  }
+
+  header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .stats {
+    gap: 10px;
+    text-align: right;
+  }
+
   .final-stats {
     grid-template-columns: 1fr;
   }
@@ -530,5 +559,9 @@ label {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
+  }
+
+  .prompt strong {
+    font-size: 44px;
   }
 }
