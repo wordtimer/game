@@ -371057,6 +371057,13 @@ export default function App() {
     if (countedInitialGame.current) return;
 
     countedInitialGame.current = true;
+
+    fetch(COUNTER_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        setGamesPlayed(Number(data.value) || 0);
+      })
+      .catch(() => {});
   }, []);
 
   /*
@@ -371064,6 +371071,7 @@ export default function App() {
    *
    * Zen and Rush modes completely disable the timer.
    */
+
   useEffect(() => {
     if (gameOver || gameMode !== "timed") return;
 
