@@ -549503,8 +549503,8 @@ zwinglianist
 zwitter
 zwitterion
 zwitterionic
-`.split(/\s+/),
-);
+`.split(/\s+/)
+    .map(word => word.toLowerCase()));
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -549526,7 +549526,7 @@ async function loadGamesPlayed(
 
     const data = await response.json();
     setGamesPlayed(Number(data.value) || 0);
-  } catch {}
+  } catch { }
 }
 
 async function countGamePlayed(
@@ -549539,7 +549539,7 @@ async function countGamePlayed(
 
     const data = await response.json();
     setGamesPlayed(Number(data.value) || 0);
-  } catch {}
+  } catch { }
 }
 
 type Difficulty = "superEasy" | "easy" | "medium" | "hard";
@@ -550313,8 +550313,8 @@ export default function App() {
             <div className="results-header">
               <small>
                 {gameMode === "zen" ||
-                gameMode === "rush" ||
-                gameMode === "shortrush"
+                  gameMode === "rush" ||
+                  gameMode === "shortrush"
                   ? "run complete"
                   : "game over"}
               </small>
