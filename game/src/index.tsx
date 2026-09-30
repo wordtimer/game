@@ -1,4 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  Leaderboard,
+  LeaderboardSubmitModal,
+  isRankedMode,
+  submitScore,
+  wouldQualify,
+  type RankedMode,
+} from "../src/app/leaderboardv2";
 import "./styles.css";
 
 const DICTIONARY = new Set(
@@ -549687,7 +549695,15 @@ export default function App() {
    * Super easy is the default difficulty.
    */
   const [difficulty, setDifficulty] = useState<Difficulty>("superEasy");
-
+  const runIdRef = useRef<string | null>(null);
+  const [pendingRun, setPendingRun] = useState<{
+    runId: string;
+    mode: RankedMode;
+    difficulty: Difficulty;
+    score: number;
+  } | null>(null);
+  const [boardRefresh, setBoardRefresh] = useState(0);
+  const [highlightRank, setHighlightRank] = useState<number | null>(null);
   /*
    * Default timer is 20 seconds.
    */
@@ -549760,6 +549776,7 @@ export default function App() {
   useEffect(() => {
     loadGamesPlayed(setGamesPlayed);
   }, []);
+
   useEffect(() => {
     if (gameOver || gameMode !== "timed") return;
 
@@ -549790,7 +549807,30 @@ export default function App() {
 
     return () => window.clearInterval(id);
   }, [gameOver, gameMode, rushStartTime]);
+  useEffect(() => {
+    if (!gameOver || !started || !isRankedMode(gameMode)) return;
 
+    const runId = runIdRef.current;
+    if (!runId) return;
+
+    const isRush = gameMode === "rush" || gameMode === "shortrush";
+    if (isRush && rushTotalTime === null) return;
+
+    runIdRef.current = null; // only check each run once
+
+    // rush modes: milliseconds (lower wins). timed: words (higher wins).
+    const finalScore = isRush ? Math.round((rushTotalTime ?? 0) * 1000) : score;
+
+    wouldQualify(gameMode, difficulty, finalScore)
+      .then((qualifies) => {
+        if (qualifies) {
+          setPendingRun({ runId, mode: gameMode, difficulty, score: finalScore });
+        }
+      })
+      .catch(() => {
+        /* leaderboard unavailable: the game still works */
+      });
+  }, [gameOver, started, gameMode, difficulty, score, rushTotalTime]);
   /*
    * Handle the timer reaching zero.
    */
@@ -549997,6 +550037,9 @@ export default function App() {
   };
   const startGame = () => {
     countGamePlayed(setGamesPlayed);
+    runIdRef.current = crypto.randomUUID(); // makes it impossible to submit one run twice
+    setPendingRun(null);
+    setHighlightRank(null);
     const startingLives =
       difficulty === "superEasy" ? 5 : difficulty === "easy" ? 4 : 3;
     const nextPrompt = pickPrompt(difficulty);
@@ -550031,6 +550074,24 @@ export default function App() {
     } else {
       setRushStartTime(null);
     }
+  };
+  const handleLeaderboardSubmit = async (name: string, color: string) => {
+    if (!pendingRun) return;
+
+    const rank = await submitScore(
+      pendingRun.runId,
+      pendingRun.mode,
+      pendingRun.difficulty,
+      pendingRun.score,
+      name,
+      color,
+    ); // if this throws, the modal shows the error
+
+    setGameMode(pendingRun.mode);
+    setDifficulty(pendingRun.difficulty);
+    setHighlightRank(rank);
+    setBoardRefresh((n) => n + 1);
+    setPendingRun(null);
   };
   /*
    * Start another game using the settings selected
@@ -550376,7 +550437,13 @@ export default function App() {
             {missedPrompts.length === 0 && (
               <p className="no-missed">no missed prompts!</p>
             )}
-
+            <div className="divider" />
+            <Leaderboard
+              mode={gameMode}
+              difficulty={difficulty}
+              refreshKey={boardRefresh}
+              highlightRank={highlightRank}
+            />
             <div className="divider" />
 
             <div className="new-game-settings">
@@ -550630,6 +550697,15 @@ export default function App() {
           </>
         )}
       </section>
+      {pendingRun && (
+        <LeaderboardSubmitModal
+          mode={pendingRun.mode}
+          difficulty={pendingRun.difficulty}
+          score={pendingRun.score}
+          onSubmit={handleLeaderboardSubmit}
+          onClose={() => setPendingRun(null)}
+        />
+      )}
     </main>
   );
 }
